@@ -14,8 +14,6 @@ best <- function(state, outcome) {
     
     ## Check column validity
     cl <- colnames(df)
-    #print(cl)
-    
     cl <- cl[tolower(cl) == tolower(outcome)]
     if (length(cl) == 0)
     {
